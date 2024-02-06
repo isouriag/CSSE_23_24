@@ -73,7 +73,7 @@ with tf.GradientTape() as tape:
     sum_squared_error = tf.reduce_sum(tf.pow(ys_tf - mu_tf, 2))
 
     # Negate (my personal preference).
-    neg_sum_squared_error = - sum_squared_error
+    neg_sum_squared_error = - sum_squared_error # negate the error (my personal preference).
 
     [dSQE_dalpha, dSQE_dbeta] = tape.gradient(neg_sum_squared_error, [alpha, beta])
 

@@ -22,7 +22,7 @@ sum_squared_errors = []
 grid = 30
 
 # Model fitting by searching (learning) parameters.
-for alpha in np.linspace(-1, 2, grid): # Parameter 1
+for alpha in np.linspace(-1, 2, grid): # Parameter 1 , np.linespace is a function that returns evenly spaced numbers over a specified interval. (startint at some poin, ending at some point)
     for beta in np.linspace(-1, 2, grid): # Parameter 2
         
         # Define our model.
